@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
-    <section>
-        <div>
-            Your Result
+<div class="container">
+    <div class="left">
+        <h4>Your Result</h4>
+<div class="score__left">
+    <span class="big__score"> 76</span>
+    <span class="small__score">of 100</span>
+</div>
+<div class="left__text">
+    <h3>Great</h3>
+    <p> You scored higher than 65% of the people who have taken these tests.</p>
+</div>
+    </div>
+
+    <div class="right">
+        <h4>Summary</h4>
+        <div class="scores">
+            <div class="score score__reaction">
+                <div class="score__con">
+                    <img src="./assets/images/icon-reaction.svg" alt="">
+                    <span>Reaction</span>
+                </div>
+                <span class="black__text">80/ <span class="grey">100</span></span>
+            </div>
+            <div class="score score__memory">
+                <div class="score__con">
+                    <img src="./assets/images/icon-memory.svg" alt="">
+                    <span>Memory</span>
+                </div>
+                <span class="black__text">92/ <span class="grey">100</span></span>
+            </div>
+            <div class="score score__verbal">
+                <div class="score__con">
+                    <img src="./assets/images/icon-verbal.svg" alt="">
+                    <span>Verbal</span>
+                </div>
+                <span class="black__text">61/ <span class="grey">100</span></span>
+            </div>
+            <div class="score score__visual">
+                <div class="score__con">
+                    <img src="./assets/images/icon-visual.svg" alt="">
+                    <span>Visual</span>
+                </div>
+                <span class="black__text">72/ <span class="grey">100</span></span>
+            </div>
         </div>
-        <div>
-            <span>76</span> Of 100
-        </div>
-        <div>
-            <p>Great</p>
-            <p>You scored higher than 65% of the people who  have taken these tests.</p>
-        </div>
-    </section>
-    <section class="right__section">
-        <div class="right__heading">Summary</div>
-        <div class="result__pane">
-            <div class="result__line">
-                <img class="result__pic" src="./assets/images/icon-reaction.svg" alt="">
-                <p class="result__para">Reaction</p>
-                <p class="result__score"><span class="result__score--highlight">80</span>/100</p>
-            </div>
-            <div class="result__line">
-                <img class="result__pic" src="./assets/images/icon-memory.svg" alt="">
-                <p class="result__para">Memory</p>
-                <p class="result__score"><span class="result__score--highlight">92</span>/100</p>
-            </div>
-            <div class="result__line">
-                <img class="result__pic" src="./assets/images/icon-verbal.svg" alt="">
-                <p class="result__para">Verbal</p>
-                <p class="result__score"><span class="result__score--highlight">61</span>/100</p>
-            </div>
-            <div class="result__line">
-                <img class="result__pic" src="./assets/images/icon-visual.svg" alt="">
-                <p class="result__para">Visual</p>
-                <p class="result__score--highlight"><span class="result__score--highlight">72</span>/100</p>
-            </div>
-        </div> 
-        <button class="result__pane--btn">Continue</button>
-    </section>
+        <button>Continue</button>
+    </div>
+</div>
 </body>
 </html>
